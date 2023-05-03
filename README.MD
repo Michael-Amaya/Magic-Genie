@@ -12,7 +12,7 @@ Magic Genie is a website that uses the Magic Eight Ball API to provide users wit
 ## How to Use Magic Genie
 Using Magic Genie is simple and straightforward. Here are the steps:
 
-1. Visit the website at CHANGE THIS! <br>
+1. Visit the website at https://www.CHANGETHIS ! <br>
 2. Type your question into the text box provided on the homepage <br>
 3. Click the "Ask" button or hit enter on your keyboard <br>
 4. Wait for the genie to provide you with an answer <br>
