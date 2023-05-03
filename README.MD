@@ -19,7 +19,7 @@ Wait for the genie to provide you with an answer
 The genie's response will appear on the next screen. You can then ask another question by repeating the process, and returning to the home screen.
 
 ## How Magic Genie Works
-Magic Genie uses the Magic Eight Ball API to provide users with responses. The API returns a random answer to any question asked, just like a real Magic Eight Ball.
+Magic Genie uses the Magic Eight Ball API to provide users with responses. The API returns a random answer to any question asked, just like a real Magic Eight Ball. \n
 [Link to API](https://www.eightballapi.com/#demo)
 
 The website was built using HTML, CSS, and JavaScript.
