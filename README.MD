@@ -20,9 +20,9 @@ The genie's response will appear on the next screen. You can then ask another qu
 
 ## How Magic Genie Works
 Magic Genie uses the Magic Eight Ball API to provide users with responses. The API returns a random answer to any question asked, just like a real Magic Eight Ball.
-Link to API: https://www.eightballapi.com/#demo
+[Link to API](https://www.eightballapi.com/#demo)
 
 The website was built using HTML, CSS, and JavaScript.
 
-##Conclusion
+## Conclusion
 Magic Genie is a fun and engaging website that provides users with a unique and entertaining experience. Whether you're seeking answers to life's biggest questions or just looking for a laugh, Magic Genie is the perfect tool to help you find the answers you're looking for. Give it a try today and see what the genie has in store for you!
