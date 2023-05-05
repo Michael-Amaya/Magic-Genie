@@ -19,7 +19,7 @@ app.set('views', path.resolve(__dirname, 'templates'));
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended:false}));
 
-const uri = `mongodb+srv://${username}:${password}@cluster0.pcrim50.mongodb.net/?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${username}:${password}@cluster0.euv7596.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 
