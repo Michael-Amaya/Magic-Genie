@@ -13,14 +13,24 @@ const password = process.env.MONGO_DB_PASSWORD;
 const database = process.env.MONGO_DB_NAME;
 const collection = process.env.MONGO_COLLECTION;
 
+const uri = `mongodb+srv://${username}:${password}@cluster0.euv7596.mongodb.net/?retryWrites=true&w=majority`;
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+
+const db = {
+    database: database,
+    collection: collection,
+    client: client
+}
+
 const app = express();
 
 app.set('views', path.resolve(__dirname, 'templates'));
+app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended:false}));
 
-const uri = `mongodb+srv://${username}:${password}@cluster0.euv7596.mongodb.net/?retryWrites=true&w=majority`;
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+// Define app routes in another file!
+require('./routes')(app, db);
 
 
 const main = async () => {
