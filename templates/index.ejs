@@ -7,6 +7,27 @@
         <title>Welcome!</title>
     </head>
     <body>
-        Magic genie stuff
+        <h1>Magic Genie</h1>
+
+        <img id="welcomeGenie" src="static/image/welcome.png" alt="welcomeGenie"> 
+
+        <br>
+
+        <form action="/getPrediction" method="post">
+
+            <label><strong>What is your question?: </strong><br><textarea rows="5" cols="80" name="question" placeholder="Ask your question here"></textarea></label>
+
+        </form>
+
+        <br>
+
+        <input type="reset" />
+        <input type="submit" value="Ask Question" onclick="return confirm('Are you sure you want to ask this question to the genie?')"/>
+
+        <br>
+
+        <a href="/previousPredictions">See previous predictions</a>
+
+
     </body>
 </html>
