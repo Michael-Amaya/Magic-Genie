@@ -29,6 +29,7 @@ module.exports = (app, db) => {
 
         const finalName = `${imageName}${imageNumber}.png`;
         answer['image'] = finalName;
+        // EJS page will get { question: 'question', answer: 'answer', answerType: someNumber, image: 'image<number>.png' }
 
         res.render('getPrediction', answer);
     });
