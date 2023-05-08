@@ -4,12 +4,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <script src="/js/index.js"></script>
         <title>Welcome!</title>
     </head>
     <body>
         <h1>Magic Genie</h1>
 
-        <img id="welcomeGenie" src="static/image/welcome.png" alt="welcomeGenie"> 
+        <img id="welcomeGenie" src="/image/welcome.png" alt="welcomeGenie"> 
 
         <br>
 
@@ -17,17 +19,20 @@
 
             <label><strong>What is your question?: </strong><br><textarea rows="5" cols="80" name="question" placeholder="Ask your question here"></textarea></label>
 
+            <br>
+
+            <input type="reset"/>
+            <input type="submit" value="Ask Question"/>
+
         </form>
 
-        <br>
 
-        <input type="reset" />
-        <input type="submit" value="Ask Question" onclick="return confirm('Are you sure you want to ask this question to the genie?')"/>
 
         <br>
 
-        <a href="/previousPredictions">See previous predictions</a>
+        <a href="/previousPredictions/all">See previous predictions</a>
 
 
     </body>
+
 </html>
