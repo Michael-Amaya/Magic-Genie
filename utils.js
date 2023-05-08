@@ -106,10 +106,21 @@ module.exports = db => {
         return result;
     };
 
+    const getQueryType = type => {
+        for (const key in AnswerType) {
+            if (type.toLowerCase() == key.toLowerCase()) {
+                return AnswerType[key];
+            }
+        }
+
+        return AnswerType.error;
+    }
+
     // Export what needs exporting
     return {
         AnswerType: AnswerType,
         askGenieQuestion: askGenieQuestion,
-        getPredictions: getPredictions
+        getPredictions: getPredictions,
+        getQueryType: getQueryType
     }
 }
