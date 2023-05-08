@@ -14,7 +14,21 @@ module.exports = (app, db) => {
 
     app.post('/getPrediction', async (req,res) => {
         const question = req.body.question;
-        const answer = utils.askGenieQuestion(question);
+        let answer = utils.askGenieQuestion(question);
+
+        // Generate image between 1 and 3
+        const imageNumber = Math.floor(Math.random() * 3) + 1;
+        let imageName = '';
+        if (answer.answerType == AnswerType.positive) {
+            imageName = 'positive';
+        } else if (answerType == AnswerType.negative) {
+            imageName = 'negative';
+        } else {
+            imageName = 'neutral';
+        }
+
+        const finalName = `${imageName}${imageNumber}.png`;
+        answer['image'] = finalName;
 
         res.render('getPrediction', answer);
     });
