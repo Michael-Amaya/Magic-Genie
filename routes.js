@@ -35,7 +35,7 @@ module.exports = (app, db) => {
     });
 
     app.get('/previousPredictions/:queryType', async (req, res) => {
-        const queryType = req.param.queryType;
+        const queryType = req.params.queryType;
         const getType = utils.getQueryType(queryType);
         let vars = {
             'err': false,
@@ -43,7 +43,7 @@ module.exports = (app, db) => {
         }
 
         if (getType != utils.AnswerType.error) {
-            vars['predictions'] = utils.getPredictions(getType);
+            vars['predictions'] = await utils.getPredictions(getType);
         } else {
             vars['err'] = true
         }
