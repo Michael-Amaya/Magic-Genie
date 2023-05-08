@@ -11,4 +11,28 @@ module.exports = (app, db) => {
     app.get('/', async (req, res) => {
         res.render('index');
     });
+
+    app.post('/getPrediction', async (req,res) => {
+        const question = req.body.question;
+        const answer = utils.askGenieQuestion(question);
+
+        res.render('getPrediction', answer);
+    });
+
+    app.get('/previousPredictions/:queryType', async (req, res) => {
+        const queryType = req.param.queryType;
+        const getType = utils.getQueryType(queryType);
+        let vars = {
+            'err': false,
+            'predictions': []
+        }
+
+        if (getType != utils.AnswerType.error) {
+            vars['predictions'] = utils.getPredictions(getType);
+        } else {
+            vars['err'] = true
+        }
+
+        res.render('previousPredictions', vars);
+    });
 };
