@@ -14,14 +14,14 @@ module.exports = (app, db) => {
 
     app.post('/getPrediction', async (req,res) => {
         const question = req.body.question;
-        let answer = utils.askGenieQuestion(question);
+        let answer = await utils.askGenieQuestion(question);
 
         // Generate image between 1 and 3
         const imageNumber = Math.floor(Math.random() * 3) + 1;
         let imageName = '';
-        if (answer.answerType == AnswerType.positive) {
+        if (answer.answerType == utils.AnswerType.positive) {
             imageName = 'positive';
-        } else if (answerType == AnswerType.negative) {
+        } else if (answer.answerType == utils.AnswerType.negative) {
             imageName = 'negative';
         } else {
             imageName = 'neutral';
