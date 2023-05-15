@@ -24,5 +24,8 @@ Magic Genie uses the Magic Eight Ball API to provide users with responses. The A
 
 The website was built using HTML, CSS, and JavaScript.
 
+## Demo
+https://youtu.be/sC-EO4fb_Xw
+
 ## Conclusion
 Magic Genie is a fun and engaging website that provides users with a unique and entertaining experience. Whether you're seeking answers to life's biggest questions or just looking for a laugh, Magic Genie is the perfect tool to help you find the answers you're looking for. Give it a try today and see what the genie has in store for you!
