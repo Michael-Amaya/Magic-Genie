@@ -20,3 +20,8 @@ body {
 a {
     color: gold;
 }
+
+#logo {
+    text-decoration: none;
+    font-size: larger;
+}

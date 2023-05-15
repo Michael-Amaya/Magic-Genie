@@ -14,3 +14,56 @@ body {
 a {
     color: gold;
 }
+
+input[type="reset"],
+input[type="submit"] {
+    font-family: "DotGothic16";
+    position: relative;
+    border: outset gold;
+    border-radius: 5px;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="reset"]::before,
+input[type="submit"]::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+}
+
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    background-color: #222;
+}
+
+input[type="reset"]:hover::before,
+input[type="submit"]:hover::before {
+    filter: brightness(0.8);
+}
+
+textarea {
+    border: 2px outset gold;
+    border-radius: 5px;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px;
+    resize: none;
+}
+
+textarea:focus {
+    background-color: #222;
+    outline: none;
+}
+
+#logo {
+    text-decoration: none;
+    font-size: larger;
+}
