@@ -12,37 +12,41 @@
 </head>
 
 <body>
-    <div id="container">
-        <a href="/" id="logo"><h1>Magic Genie</h1></a>
+    <div id="pagecontainer">
+        <div id="container">
+            <a href="/" id="logo"><h1>Magic Genie</h1></a>
 
-        <img id="welcomeGenie" src="/image/welcome.png" alt="welcomeGenie">
-
-        <br>
-
-        <form action="/getPrediction" method="post">
-
-            <label><strong>What is your question?</strong><br><br><textarea rows="5" cols="88" name="question" id="question"
-                    placeholder="Ask your question here (Your question will be visible to others and saved in our database)"></textarea></label>
+            <img id="welcomeGenie" src="/image/welcome.png" alt="welcomeGenie">
 
             <br>
+
+            <form action="/getPrediction" method="post">
+
+                <label><strong>What is your question?</strong><br><br><textarea rows="5" cols="88" name="question" id="question"
+                        placeholder="Ask your question here (Your question will be visible to others and saved in our database)"></textarea></label>
+
+                <br>
+                <br>
+
+                <input type="reset" value="Reset"/>
+                <input type="submit" value="Ask Question" />
+
+            </form>
+
+
+
             <br>
 
-            <input type="reset" value="Reset"/>
-            <input type="submit" value="Ask Question" />
-
-        </form>
+            <a href="/previousPredictions/all">See previous predictions</a>
 
 
+        </div>
 
-        <br>
-
-        <a href="/previousPredictions/all">See previous predictions</a>
-
+        <footer> 
+            <a href="https://github.com/Michael-Amaya/Magic-Genie" target="_blank" rel="noopener noreferrer" class="foot">Link to GitHub repository</a>
+        </footer>
     </div>
 
-    <footer> 
-        <a href="https://github.com/Michael-Amaya/Magic-Genie" target="_blank" rel="noopener noreferrer" class="foot">Link to GitHub repository</a>
-    </footer>
 </body>
 
 </html>
