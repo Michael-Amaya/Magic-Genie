@@ -1,8 +1,8 @@
 # Magic Genie
 
 ## Created by:
- * [Mike Amaya](https://github.com/Michael-Amaya) (aswiersk)
- * [Alessio Swierski](https://github.com/alessiodski) (mamaya59)
+ * [Mike Amaya](https://github.com/Michael-Amaya) (mamaya59)
+ * [Alessio Swierski](https://github.com/alessiodski) (aswiersk)
  * [Fabrizzio Perez](https://github.com/fabrizzio-perez) (fperez46)
 
 ## Description
